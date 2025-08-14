@@ -1,0 +1,79 @@
+{
+  "name": "MF Store Girls - Moda Feminina Premium",
+  "short_name": "MF Store Girls",
+  "description": "E-commerce premium de moda feminina com as últimas tendências e peças exclusivas",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F5E6D3",
+  "theme_color": "#8B6F47",
+  "orientation": "portrait-primary",
+  "categories": ["shopping", "lifestyle"],
+  "lang": "pt-BR",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "/mf-store-logo.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/mf-store-logo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "maskable any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshot-wide.jpg",
+      "sizes": "1280x720",
+      "type": "image/jpeg",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/screenshot-narrow.jpg",
+      "sizes": "750x1334",
+      "type": "image/jpeg",
+      "form_factor": "narrow"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Produtos",
+      "short_name": "Produtos",
+      "description": "Ver todos os produtos",
+      "url": "/produtos",
+      "icons": [
+        {
+          "src": "/mf-store-logo.jpg",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Minha Conta",
+      "short_name": "Conta",
+      "description": "Acessar minha conta",
+      "url": "/conta",
+      "icons": [
+        {
+          "src": "/mf-store-logo.jpg",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Carrinho",
+      "short_name": "Carrinho",
+      "description": "Ver carrinho de compras",
+      "url": "/carrinho",
+      "icons": [
+        {
+          "src": "/mf-store-logo.jpg",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ]
+}
