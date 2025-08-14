@@ -7,9 +7,9 @@ import { Input } from "@/components/ui/input"
 export function Footer() {
   return (
     <footer className="bg-foreground text-background">
-      {/* WhatsApp floating button */}
-      <div className="fixed bottom-6 right-6 z-50">
-        <Button size="icon" className="w-14 h-14 rounded-full bg-green-500 hover:bg-green-600 shadow-lg" asChild>
+      {/* WhatsApp floating button (move to left on mobile to não conflitar com o chat) */}
+      <div className="fixed bottom-6 left-6 md:left-auto md:right-6 z-50">
+        <Button size="icon" className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-green-500 hover:bg-green-600 shadow-lg" asChild>
           <Link href="https://wa.me/5511999999999" target="_blank">
             <MessageCircle className="h-6 w-6" />
           </Link>

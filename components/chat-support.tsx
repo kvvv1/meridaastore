@@ -78,6 +78,11 @@ export function ChatSupport() {
   const [isTyping, setIsTyping] = useState(false)
   const [activeTab, setActiveTab] = useState("chat")
   const messagesEndRef = useRef<HTMLDivElement>(null)
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
 
   useEffect(() => {
     if (isOpen && messages.length === 0) {
@@ -185,21 +190,26 @@ export function ChatSupport() {
     return date.toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" })
   }
 
+  if (!mounted) return null
+
   return (
     <>
-      {/* Chat Toggle Button */}
-      <Button
-        onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-6 right-6 z-50 h-14 w-14 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 bg-primary hover:bg-primary/90"
-        size="icon"
-      >
-        {isOpen ? <X className="h-6 w-6" /> : <MessageCircle className="h-6 w-6" />}
-      </Button>
+      {/* Chat Toggle Button (hidden when open to avoid overlap) */}
+      {!isOpen && (
+        <Button
+          onClick={() => setIsOpen(true)}
+          className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-[60] h-14 w-14 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 bg-primary hover:bg-primary/90"
+          size="icon"
+          aria-label="Abrir chat de suporte"
+        >
+          <MessageCircle className="h-6 w-6" />
+        </Button>
+      )}
 
       {/* Chat Window */}
       {isOpen && (
-        <div className="fixed bottom-24 right-6 z-50 w-80 h-96 bg-background border rounded-lg shadow-xl">
-          <Tabs value={activeTab} onValueChange={setActiveTab} className="h-full flex flex-col">
+        <div className="fixed inset-x-4 bottom-20 sm:inset-auto sm:bottom-24 sm:right-6 z-[60] bg-background border rounded-lg shadow-xl h-[70vh] max-h-[80vh] sm:h-96 sm:w-80 pb-2">
+          <Tabs value={activeTab} onValueChange={setActiveTab} className="h-full min-h-0 flex flex-col">
             <div className="border-b p-4">
               <div className="flex items-center justify-between mb-3">
                 <div className="flex items-center gap-2">
@@ -225,16 +235,16 @@ export function ChatSupport() {
               </TabsList>
             </div>
 
-            <TabsContent value="chat" className="flex-1 flex flex-col p-0 m-0">
+            <TabsContent value="chat" className="flex-1 min-h-0 flex flex-col p-0 m-0">
               {/* Messages */}
-              <div className="flex-1 overflow-y-auto p-4 space-y-3">
+              <div className="flex-1 overflow-y-auto overscroll-contain p-4 space-y-3">
                 {messages.map((message) => (
                   <div
                     key={message.id}
                     className={`flex ${message.sender === "user" ? "justify-end" : "justify-start"}`}
                   >
                     <div
-                      className={`max-w-[80%] rounded-lg px-3 py-2 text-sm ${
+                      className={`max-w-[85%] rounded-lg px-3 py-2 text-sm ${
                         message.sender === "user"
                           ? "bg-primary text-primary-foreground"
                           : "bg-secondary text-secondary-foreground"
@@ -243,7 +253,7 @@ export function ChatSupport() {
                       <div className="flex items-start gap-2">
                         {message.sender !== "user" && <Bot className="h-4 w-4 mt-0.5 flex-shrink-0" />}
                         <div>
-                          <p>{message.text}</p>
+                          <p className="break-words">{message.text}</p>
                           <p className="text-xs opacity-70 mt-1">{formatTime(message.timestamp)}</p>
                         </div>
                       </div>
@@ -271,9 +281,9 @@ export function ChatSupport() {
 
               {/* Quick Replies */}
               {messages.length === 1 && (
-                <div className="p-4 border-t">
+                <div className="p-4 pt-2 border-t">
                   <p className="text-xs text-muted-foreground mb-2">Respostas rápidas:</p>
-                  <div className="flex flex-wrap gap-1">
+                  <div className="flex flex-wrap gap-1 max-h-24 overflow-y-auto pr-1">
                     {quickReplies.map((reply) => (
                       <Button
                         key={reply}
@@ -290,7 +300,7 @@ export function ChatSupport() {
               )}
 
               {/* Input */}
-              <div className="p-4 border-t">
+              <div className="p-4 border-t pb-[env(safe-area-inset-bottom)]">
                 <div className="flex gap-2">
                   <Input
                     value={inputValue}
