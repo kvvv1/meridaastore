@@ -1,6 +1,8 @@
 import { AdminLayout } from "@/components/admin/admin-layout"
 import { CustomersManagement } from "@/components/admin/customers-management"
 
+export const dynamic = "force-dynamic"
+
 export default function AdminCustomersPage() {
   return (
     <AdminLayout>
