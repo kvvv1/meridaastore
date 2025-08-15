@@ -80,8 +80,13 @@ export function AdminLayout({ children }: AdminLayoutProps) {
         </div>
       </div>
 
-      {/* Mobile menu */}
+      {/* Mobile menu Sheet - moving it to include the trigger inside */}
       <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
+        <SheetTrigger asChild>
+          <Button variant="ghost" size="icon" className="md:hidden ml-4">
+            <Menu className="h-5 w-5" />
+          </Button>
+        </SheetTrigger>
         <SheetContent side="left" className="w-64">
           <div className="flex flex-col h-full">
             <div className="flex items-center px-4 py-5">
@@ -117,12 +122,6 @@ export function AdminLayout({ children }: AdminLayoutProps) {
       <div className="md:pl-64 flex flex-col flex-1">
         {/* Top bar */}
         <div className="sticky top-0 z-10 flex h-16 flex-shrink-0 bg-background border-b">
-          <SheetTrigger asChild>
-            <Button variant="ghost" size="icon" className="md:hidden ml-4">
-              <Menu className="h-5 w-5" />
-            </Button>
-          </SheetTrigger>
-
           <div className="flex flex-1 justify-between px-4 md:px-6">
             <div className="flex flex-1 items-center">
               <div className="w-full max-w-lg">
