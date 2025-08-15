@@ -65,11 +65,11 @@ export function ReferralProgram() {
   }
 
   const shareToInstagram = () => {
-    const text = `Minhas amigas, descobri essa loja incrível! 😍✨ Use meu link e ganhe desconto especial: ${referralLink} #mfstoregirls #modafeminina`
+    const text = `Minhas amigas, descobri essa loja incrível! 😍✨ Use meu link e ganhe desconto especial: ${referralLink} #meridastore #modafeminina`
 
     if (navigator.share) {
       navigator.share({
-        title: "MF Store Girls",
+        title: "Merida Store",
         text: text,
         url: referralLink,
       })

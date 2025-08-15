@@ -44,7 +44,7 @@ export function Header() {
                   <Link href="/" className="flex items-center">
                     <Image
                       src="/mf-store-logo.jpg"
-                      alt="MF Store Girls"
+                      alt="Merida Store"
                       width={120}
                       height={120}
                       className="rounded-lg"
@@ -72,7 +72,7 @@ export function Header() {
             <Link href="/" className="flex items-center">
               <Image
                 src="/mf-store-logo.jpg"
-                alt="MF Store Girls"
+                alt="Merida Store"
                 width={60}
                 height={60}
                 className="md:w-16 md:h-16 rounded-lg hover:scale-105 transition-transform duration-300"

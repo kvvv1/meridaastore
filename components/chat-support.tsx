@@ -59,7 +59,7 @@ const quickReplies = [
 ]
 
 const botResponses = {
-  greeting: "Olá! Sou a assistente virtual da MF Store Girls. Como posso ajudar você hoje?",
+  greeting: "Olá! Sou a assistente virtual da Merida Store. Como posso ajudar você hoje?",
   agent: "Vou conectar você com um de nossos atendentes. Por favor, aguarde um momento...",
   order:
     "Para ajudar com seu pedido, preciso do número. Você pode encontrá-lo no email de confirmação ou na sua conta.",
@@ -217,7 +217,7 @@ export function ChatSupport() {
                     <MessageCircle className="h-4 w-4 text-white" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-sm">Suporte MF Store</h3>
+                    <h3 className="font-semibold text-sm">Suporte Merida Store</h3>
                     <div className="flex items-center gap-1">
                       <div className="w-2 h-2 bg-green-500 rounded-full"></div>
                       <span className="text-xs text-muted-foreground">Online</span>
@@ -332,7 +332,7 @@ export function ChatSupport() {
                       <Mail className="h-4 w-4 text-primary" />
                       <span className="text-sm font-medium">Email</span>
                     </div>
-                    <p className="text-sm text-muted-foreground">contato@mfstoregirls.com.br</p>
+                    <p className="text-sm text-muted-foreground">contato@meridastore.com.br</p>
                   </Card>
 
                   <Card className="p-3">

@@ -77,7 +77,7 @@ export function EnhancedWishlist() {
 
   const shareWishlist = async (platform: "whatsapp" | "instagram" | "facebook" | "link") => {
     const wishlistUrl = `${window.location.origin}/wishlist/${user?.id}`
-    const text = `Olha minha wishlist da MF Store Girls! 😍 Tem peças incríveis que estou desejando: ${wishlistUrl}`
+    const text = `Olha minha wishlist da Merida Store! 😍 Tem peças incríveis que estou desejando: ${wishlistUrl}`
 
     switch (platform) {
       case "whatsapp":

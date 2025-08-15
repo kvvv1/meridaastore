@@ -88,7 +88,7 @@ export function DiscountPopup() {
             <Gift className="h-6 w-6" />
             <h2 className="text-xl font-bold">Oferta Especial!</h2>
           </div>
-          <p className="text-sm opacity-90">Primeira compra na MF Store Girls</p>
+          <p className="text-sm opacity-90">Primeira compra na Merida Store</p>
         </div>
 
         {/* Content */}

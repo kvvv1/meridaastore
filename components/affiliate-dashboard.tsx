@@ -53,11 +53,11 @@ export function AffiliateDashboard({ affiliate }: AffiliateDashboardProps) {
 
   const shareToInstagram = async () => {
     const link = await AffiliateService.generateAffiliateLink(affiliate.id)
-    const text = `Olha que peças incríveis eu encontrei na MF Store Girls! 😍✨ Use meu link e ganhe desconto especial: ${link}`
+    const text = `Olha que peças incríveis eu encontrei na Merida Store! 😍✨ Use meu link e ganhe desconto especial: ${link}`
 
     if (navigator.share) {
       navigator.share({
-        title: "MF Store Girls",
+        title: "Merida Store",
         text: text,
         url: link,
       })
@@ -268,7 +268,7 @@ export function AffiliateDashboard({ affiliate }: AffiliateDashboardProps) {
                 <ul className="text-sm space-y-1 text-muted-foreground">
                   <li>• Mostre as peças sendo usadas no dia a dia</li>
                   <li>• Compartilhe looks completos com produtos da loja</li>
-                  <li>• Use hashtags relevantes: #mfstoregirls #modafeminina</li>
+                  <li>• Use hashtags relevantes: #meridastore #modafeminina</li>
                   <li>• Interaja com seus seguidores nos comentários</li>
                 </ul>
               </div>

@@ -12,9 +12,9 @@ import { Save, Settings, Truck, CreditCard, Bell } from "lucide-react"
 
 export function AdminSettings() {
   const [settings, setSettings] = useState({
-    storeName: "MF Store Girls",
+    storeName: "Merida Store",
     storeDescription: "Moda feminina premium que celebra a individualidade",
-    email: "contato@mfstoregirls.com.br",
+    email: "contato@meridastore.com.br",
     phone: "(11) 99999-9999",
     address: "São Paulo, SP",
     freeShippingThreshold: 199,

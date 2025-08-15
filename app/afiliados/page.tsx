@@ -89,7 +89,7 @@ export default function AfiliadosPage() {
       <div className="max-w-4xl mx-auto">
         {/* Hero Section */}
         <div className="text-center mb-12">
-          <h1 className="text-3xl md:text-4xl font-heading font-bold mb-4">Programa de Afiliados MF Store Girls</h1>
+          <h1 className="text-3xl md:text-4xl font-heading font-bold mb-4">Programa de Afiliados Merida Store</h1>
           <p className="text-lg text-muted-foreground mb-6">
             Monetize sua influência e ganhe até 15% de comissão em cada venda
           </p>

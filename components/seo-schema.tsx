@@ -25,14 +25,14 @@ interface SEOSchemaProps {
 
 export function SEOSchema({ type, data }: SEOSchemaProps) {
   const generateSchema = () => {
-    const baseUrl = "https://mfstoregirls.com.br"
+    const baseUrl = "https://meridastore.com.br"
 
     switch (type) {
       case "website":
         return {
           "@context": "https://schema.org",
           "@type": "WebSite",
-          name: "MF Store Girls",
+          name: "Merida Store",
           description: "E-commerce premium de moda feminina com as últimas tendências e peças exclusivas",
           url: baseUrl,
           potentialAction: {
@@ -46,7 +46,7 @@ export function SEOSchema({ type, data }: SEOSchemaProps) {
         return {
           "@context": "https://schema.org",
           "@type": "Organization",
-          name: "MF Store Girls",
+          name: "Merida Store",
           description: "Loja online de moda feminina premium",
           url: baseUrl,
           logo: `${baseUrl}/mf-store-logo.jpg`,
@@ -56,7 +56,7 @@ export function SEOSchema({ type, data }: SEOSchemaProps) {
             contactType: "customer service",
             availableLanguage: "Portuguese",
           },
-          sameAs: ["https://www.instagram.com/mfstoregirls", "https://www.facebook.com/mfstoregirls"],
+          sameAs: ["https://www.instagram.com/meridastore", "https://www.facebook.com/meridastore"],
         }
 
       case "product":
@@ -70,7 +70,7 @@ export function SEOSchema({ type, data }: SEOSchemaProps) {
           image: `${baseUrl}${product.image}`,
           brand: {
             "@type": "Brand",
-            name: "MF Store Girls",
+            name: "Merida Store",
           },
           category: product.category,
           offers: {
@@ -80,7 +80,7 @@ export function SEOSchema({ type, data }: SEOSchemaProps) {
             availability: product.inStock ? "https://schema.org/InStock" : "https://schema.org/OutOfStock",
             seller: {
               "@type": "Organization",
-              name: "MF Store Girls",
+              name: "Merida Store",
             },
           },
           aggregateRating:

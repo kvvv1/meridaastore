@@ -4,7 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* MF Store Girls - Earthy color palette inspired by the logo */
+  /* Merida Store - Earthy color palette inspired by the logo */
   --background: oklch(0.97 0.01 45); /* Soft cream/beige background */
   --foreground: oklch(0.25 0.02 45); /* Deep brown text */
   --card: oklch(0.98 0.005 45);

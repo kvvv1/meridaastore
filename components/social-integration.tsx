@@ -28,7 +28,7 @@ const mockPosts: SocialPost[] = [
   {
     id: "1",
     platform: "instagram",
-    content: "Novo look chegando! 😍✨ #mfstoregirls",
+    content: "Novo look chegando! 😍✨ #meridastore",
     image: "/placeholder.svg?height=200&width=200",
     engagement: 245,
     createdAt: new Date("2024-01-15"),
@@ -63,7 +63,7 @@ export function SocialIntegration() {
     switch (platform) {
       case "instagram":
         if (navigator.share) {
-          navigator.share({ title: "MF Store Girls", text, url: productUrl })
+          navigator.share({ title: "Merida Store", text, url: productUrl })
         } else {
           navigator.clipboard.writeText(`${text} ${productUrl}`)
           toast({ title: "Texto copiado!", description: "Cole no seu Instagram" })

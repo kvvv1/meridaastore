@@ -123,7 +123,7 @@ export function LiveShopping() {
 
   const shareStream = () => {
     const url = `${window.location.origin}/live/${stream.id}`
-    const text = `Assista agora: ${stream.title} - Live na MF Store Girls! 🔴✨`
+    const text = `Assista agora: ${stream.title} - Live na Merida Store! 🔴✨`
 
     if (navigator.share) {
       navigator.share({ title: stream.title, text, url })

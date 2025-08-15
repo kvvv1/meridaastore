@@ -5,7 +5,7 @@ import { X } from "lucide-react"
 
 const promos = [
   "🔥 FRETE GRÁTIS para todo Brasil em compras acima de R$ 199",
-  "✨ 5 anos de MF Store Girls - ATÉ 70% OFF em toda loja",
+  "✨ 5 anos de Merida Store - ATÉ 70% OFF em toda loja",
   "💳 Parcele em até 12x sem juros no cartão de crédito",
 ]
 

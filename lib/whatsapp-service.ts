@@ -25,7 +25,7 @@ export class WhatsAppService {
   }
 
   static async sendCartAbandonedMessage(phone: string, customerName: string, cartItems: any[]) {
-    const message = `Olá ${customerName}! 👋\n\nVi que você esqueceu alguns itens incríveis no seu carrinho na MF Store Girls! 🛍️\n\nQue tal finalizar sua compra? Temos:\n${cartItems.map((item) => `• ${item.name}`).join("\n")}\n\nFinalize agora e ganhe 10% OFF com o cupom: VOLTA10\n\n🔗 Finalizar compra: ${process.env.NEXT_PUBLIC_SITE_URL}/carrinho`
+    const message = `Olá ${customerName}! 👋\n\nVi que você esqueceu alguns itens incríveis no seu carrinho na Merida Store! 🛍️\n\nQue tal finalizar sua compra? Temos:\n${cartItems.map((item) => `• ${item.name}`).join("\n")}\n\nFinalize agora e ganhe 10% OFF com o cupom: VOLTA10\n\n🔗 Finalizar compra: ${process.env.NEXT_PUBLIC_SITE_URL}/carrinho`
 
     return this.sendMessage({
       to: phone,
@@ -35,7 +35,7 @@ export class WhatsAppService {
   }
 
   static async sendOrderConfirmation(phone: string, customerName: string, orderId: string) {
-    const message = `🎉 Pedido confirmado, ${customerName}!\n\nSeu pedido #${orderId} foi recebido com sucesso!\n\n📦 Você receberá o código de rastreamento em breve\n💳 Pagamento processado\n\nObrigada por escolher a MF Store Girls! ✨`
+    const message = `🎉 Pedido confirmado, ${customerName}!\n\nSeu pedido #${orderId} foi recebido com sucesso!\n\n📦 Você receberá o código de rastreamento em breve\n💳 Pagamento processado\n\nObrigada por escolher a Merida Store! ✨`
 
     return this.sendMessage({
       to: phone,

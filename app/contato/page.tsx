@@ -55,7 +55,7 @@ export default function ContatoPage() {
                     </div>
                     <div>
                       <h3 className="font-semibold">E-mail</h3>
-                      <p className="text-muted-foreground">contato@mfstoregirls.com.br</p>
+                      <p className="text-muted-foreground">contato@meridastore.com.br</p>
                     </div>
                   </div>
                 </CardContent>

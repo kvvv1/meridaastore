@@ -84,7 +84,7 @@ self.addEventListener("push", (event) => {
     ],
   }
 
-  event.waitUntil(self.registration.showNotification("MF Store Girls", options))
+  event.waitUntil(self.registration.showNotification("Merida Store", options))
 })
 
 // Handle notification clicks

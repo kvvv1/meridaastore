@@ -134,7 +134,7 @@ export default function PrivacidadePage() {
                   contato conosco:
                 </p>
                 <div className="space-y-2 text-muted-foreground">
-                  <p>E-mail: privacidade@mfstoregirls.com.br</p>
+                  <p>E-mail: privacidade@meridastore.com.br</p>
                   <p>Telefone: (11) 99999-9999</p>
                   <p>Endereço: São Paulo, SP</p>
                 </div>

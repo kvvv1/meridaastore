@@ -2,16 +2,16 @@ export const EmailTemplates = {
   welcome: {
     id: "welcome",
     name: "Boas-vindas",
-    subject: "Bem-vinda à MF Store Girls! ✨",
+    subject: "Bem-vinda à Merida Store! ✨",
     html: `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; background: #F5E6D3;">
         <div style="background: #8B6F47; padding: 40px 20px; text-align: center;">
-          <h1 style="color: white; margin: 0; font-size: 28px;">Bem-vinda à MF Store Girls!</h1>
+          <h1 style="color: white; margin: 0; font-size: 28px;">Bem-vinda à Merida Store!</h1>
         </div>
         <div style="padding: 40px 20px; background: white; margin: 20px;">
           <h2 style="color: #8B6F47;">Olá {{customerName}}! 👋</h2>
           <p style="font-size: 16px; line-height: 1.6; color: #333;">
-            Que alegria ter você conosco! Você acabou de se juntar a milhares de mulheres que confiam na MF Store Girls para arrasar no visual.
+            Que alegria ter você conosco! Você acabou de se juntar a milhares de mulheres que confiam na Merida Store para arrasar no visual.
           </p>
           <p style="font-size: 16px; line-height: 1.6; color: #333;">
             Como boas-vindas, preparamos um desconto especial de <strong>15% OFF</strong> na sua primeira compra!

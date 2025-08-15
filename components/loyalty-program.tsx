@@ -144,7 +144,7 @@ export function LoyaltyProgram() {
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
             <Gift className="h-5 w-5 text-primary" />
-            Programa de Fidelidade MF Store Girls
+            Programa de Fidelidade Merida Store
           </CardTitle>
           <CardDescription>Ganhe pontos a cada compra e troque por recompensas exclusivas</CardDescription>
         </CardHeader>

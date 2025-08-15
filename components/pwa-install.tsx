@@ -83,7 +83,7 @@ export function PWAInstall() {
               <Download className="h-6 w-6 text-primary" />
             </div>
             <div className="flex-1 min-w-0">
-              <h3 className="font-semibold text-sm mb-1">Instalar MF Store Girls</h3>
+              <h3 className="font-semibold text-sm mb-1">Instalar Merida Store</h3>
               <p className="text-xs text-muted-foreground mb-3">
                 Instale nosso app para uma experiência mais rápida e acesso offline
               </p>

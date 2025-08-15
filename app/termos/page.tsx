@@ -19,7 +19,7 @@ export default function TermosPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Ao acessar e usar o site da MF Store Girls, você concorda em cumprir e estar vinculado a estes Termos
+                  Ao acessar e usar o site da Merida Store, você concorda em cumprir e estar vinculado a estes Termos
                   de Uso. Se você não concordar com qualquer parte destes termos, não deve usar nosso site.
                 </p>
               </CardContent>
@@ -108,7 +108,7 @@ export default function TermosPage() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-muted-foreground">
-                  Todo o conteúdo do site, incluindo textos, imagens, logos e design, é propriedade da MF Store Girls e
+                  Todo o conteúdo do site, incluindo textos, imagens, logos e design, é propriedade da Merida Store e
                   está protegido por leis de direitos autorais. É proibida a reprodução sem autorização.
                 </p>
               </CardContent>
@@ -120,7 +120,7 @@ export default function TermosPage() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-muted-foreground">
-                  A MF Store Girls não será responsável por danos indiretos, incidentais ou consequenciais decorrentes
+                  A Merida Store não será responsável por danos indiretos, incidentais ou consequenciais decorrentes
                   do uso do site ou produtos, exceto quando exigido por lei.
                 </p>
               </CardContent>
@@ -145,7 +145,7 @@ export default function TermosPage() {
               <CardContent className="space-y-4">
                 <p className="text-muted-foreground">Para dúvidas sobre estes Termos de Uso, entre em contato:</p>
                 <div className="space-y-2 text-muted-foreground">
-                  <p>E-mail: contato@mfstoregirls.com.br</p>
+                  <p>E-mail: contato@meridastore.com.br</p>
                   <p>Telefone: (11) 99999-9999</p>
                   <p>WhatsApp: (11) 99999-9999</p>
                 </div>

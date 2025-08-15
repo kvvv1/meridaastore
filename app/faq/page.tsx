@@ -51,7 +51,7 @@ export default function FAQPage() {
     {
       question: "Como posso entrar em contato?",
       answer:
-        "Você pode nos contatar via WhatsApp (11) 99999-9999, e-mail contato@mfstoregirls.com.br ou através da página de contato em nosso site.",
+        "Você pode nos contatar via WhatsApp (11) 99999-9999, e-mail contato@meridastore.com.br ou através da página de contato em nosso site.",
     },
   ]
 

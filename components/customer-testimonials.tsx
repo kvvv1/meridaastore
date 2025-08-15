@@ -17,7 +17,7 @@ const testimonials = [
     name: "Mariana Silva",
     location: "Rio de Janeiro, RJ",
     rating: 5,
-    comment: "Recebi meu pedido super rápido e a peça veio exatamente como na foto. Recomendo demais a MF Store Girls!",
+    comment: "Recebi meu pedido super rápido e a peça veio exatamente como na foto. Recomendo demais a Merida Store!",
     image: "/placeholder.svg?height=80&width=80",
     purchase: "Conjunto Blazer Estruturado",
   },

@@ -235,7 +235,7 @@ export class AnalyticsService {
     }
   }
 
-  // Custom Events for MF Store Girls
+  // Custom Events for Merida Store
   static async trackLiveShoppingView(liveId: string, userId?: string) {
     return this.trackEvent({
       event: "live_shopping_view",

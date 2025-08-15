@@ -62,7 +62,7 @@ const mockReviews: Review[] = [
     response: {
       text: "Muito obrigada pelo feedback, Maria! Ficamos felizes que tenha gostado ❤️",
       date: new Date("2024-01-21"),
-      author: "MF Store Girls",
+      author: "Merida Store",
     },
   },
   {

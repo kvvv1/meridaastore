@@ -23,34 +23,34 @@ const dmSans = DM_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "MF Store Girls - Moda Feminina Premium | E-commerce Exclusivo",
+  title: "Merida Store - Moda Feminina Premium | E-commerce Exclusivo",
   description:
-    "Descubra a moda feminina premium na MF Store Girls. Vestidos elegantes, blusas sofisticadas e acessórios exclusivos. Frete grátis acima de R$ 199. Programa de fidelidade com pontos e recompensas.",
+    "Descubra a moda feminina premium na Merida Store. Vestidos elegantes, blusas sofisticadas e acessórios exclusivos. Frete grátis acima de R$ 199. Programa de fidelidade com pontos e recompensas.",
   keywords:
-    "moda feminina, vestidos elegantes, roupas premium, e-commerce moda, blusas femininas, acessórios, MF Store Girls",
-  authors: [{ name: "MF Store Girls" }],
-  creator: "MF Store Girls",
-  publisher: "MF Store Girls",
+    "moda feminina, vestidos elegantes, roupas premium, e-commerce moda, blusas femininas, acessórios, Merida Store",
+  authors: [{ name: "Merida Store" }],
+  creator: "Merida Store",
+  publisher: "Merida Store",
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://mfstoregirls.com.br"),
+  metadataBase: new URL("https://meridastore.com.br"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "MF Store Girls - Moda Feminina Premium",
+    title: "Merida Store - Moda Feminina Premium",
     description: "Descubra a moda feminina premium com peças exclusivas e elegantes",
-    url: "https://mfstoregirls.com.br",
-    siteName: "MF Store Girls",
+    url: "https://meridastore.com.br",
+    siteName: "Merida Store",
     images: [
       {
         url: "/mf-store-logo.jpg",
         width: 1200,
         height: 630,
-        alt: "MF Store Girls - Moda Feminina Premium",
+        alt: "Merida Store - Moda Feminina Premium",
       },
     ],
     locale: "pt_BR",
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "MF Store Girls - Moda Feminina Premium",
+    title: "Merida Store - Moda Feminina Premium",
     description: "Descubra a moda feminina premium com peças exclusivas e elegantes",
     images: ["/mf-store-logo.jpg"],
   },
@@ -91,7 +91,7 @@ export default function RootLayout({
         <meta name="theme-color" content="#8B6F47" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-        <meta name="apple-mobile-web-app-title" content="MF Store Girls" />
+        <meta name="apple-mobile-web-app-title" content="Merida Store" />
         <link rel="apple-touch-icon" href="/mf-store-logo.jpg" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
       </head>

@@ -22,7 +22,7 @@ export function Footer() {
             {/* Brand */}
             <div className="col-span-1 md:col-span-1">
               <div className="mb-4">
-                <Image src="/mf-store-logo.jpg" alt="MF Store Girls" width={120} height={120} className="rounded-lg" />
+                <Image src="/merida-store-logo.jpg" alt="Merida Store" width={120} height={120} className="rounded-lg" />
               </div>
               <p className="text-sm opacity-80 mb-6">
                 Moda feminina premium que celebra a individualidade e sofisticação da mulher moderna.
@@ -118,7 +118,7 @@ export function Footer() {
                 </div>
                 <div className="flex items-center gap-2 text-sm">
                   <Mail className="h-4 w-4" />
-                  <span>contato@mfstoregirls.com.br</span>
+                  <span>contato@meridastore.com.br</span>
                 </div>
                 <div className="flex items-center gap-2 text-sm">
                   <MapPin className="h-4 w-4" />
@@ -173,7 +173,7 @@ export function Footer() {
 
           {/* Copyright */}
           <div className="border-t border-background/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-sm opacity-80">
-            <p>&copy; 2024 MF Store Girls. Todos os direitos reservados.</p>
+            <p>&copy; 2024 Merida Store. Todos os direitos reservados.</p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link href="/privacidade" className="hover:text-primary transition-colors">
                 Política de Privacidade
